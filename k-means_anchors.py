@@ -145,15 +145,15 @@ def compute_centroids(label_path,n_anchors,loss_convergence,grid_size,iterations
     boxes = []
     label_files = []
     f = open(label_path)
-    for line in f:
-        label_path = line.rstrip().replace('images', 'labels')
-        label_path = label_path.replace('JPEGImages', 'labels')
-        label_path = label_path.replace('.jpg', '.txt')
-        label_path = label_path.replace('.JPEG', '.txt')
-        label_files.append(label_path)
-    f.close()
+#     for line in f:
+#         label_path = line.rstrip().replace('images', 'labels')
+#         label_path = label_path.replace('JPEGImages', 'labels')
+#         label_path = label_path.replace('.jpg', '.txt')
+#         label_path = label_path.replace('.JPEG', '.txt')
+#         label_files.append(label_path)
+#     f.close()
 
-    for label_file in label_files:
+    for label_file in f:
         f = open(label_file)
         for line in f:
             temp = line.strip().split(" ")
