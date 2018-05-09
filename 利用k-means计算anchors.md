@@ -4,6 +4,11 @@
 d = 1 - IOU(box,centroid),centroid是作为聚类中心的框  
 [代码](https://github.com/waallf/ECCV/blob/master/k-means_anchors.py)
 
+## 怎么使用计算出的聚类中心：  
+k-means 计算出了n个中心(box 的长和宽)  
+* 选取聚类中心个数，如果loss可以减小很多的话，就增加一个聚类中心(dssd中使用了7个cluster)  
+* 看哪个产生的中心所占比例最高  
+* 计算出这个中心的长宽比，加入aspect ratio  
 ## eccv annoations数据格式：
 bbox_left>        ：预测左上角X坐标  
 bbox_top          ：预测左上角y坐标  
