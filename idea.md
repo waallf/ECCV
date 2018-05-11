@@ -9,13 +9,18 @@
 
 ---
 # 未完成  
-1. 改变每个特征图中设定anchors框的大小
-7. 使用新的损失函数
-2. 将输入改为1024  
+6. 看能否实现Single-Shot Bidirectional Pyramid Networks for High-Quality Object Detection  
+1. 改变每个特征图中设定anchors框的大小（一开始的想法是将初始的anchors变小，但是由于bbox较小，这样在计算anchors与bbox时的iou就会变小）  
+*现在并没有使用anchors与bbox iou的阈值（0.5），应该是要加上的，但是由于上述原因iou会很小，所以还是需要测试这个阈值 （代码：ssd_commom/131行）  
+2. 将输入改为1024 
+
+
+ 
+7. 使用新的损失函数  
 3. 切图  
 
 
 4. 使用残差网络，并修改残差结构（按论文）
 5. 训练R-FCN  
-6. 看能否实现Single-Shot Bidirectional Pyramid Networks for High-Quality Object Detection
+
 
