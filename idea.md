@@ -10,9 +10,12 @@
 ---
 # 未完成  
 1. 改变每个特征图中设定anchors框的大小
+7. 使用新的损失函数
 2. 将输入改为1024  
 3. 切图  
+
+
 4. 使用残差网络，并修改残差结构（按论文）
 5. 训练R-FCN  
 6. 看能否实现Single-Shot Bidirectional Pyramid Networks for High-Quality Object Detection
-7. 使用新的损失函数
+
