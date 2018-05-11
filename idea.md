@@ -15,4 +15,4 @@
 4. 使用残差网络，并修改残差结构（按论文）
 5. 训练R-FCN  
 6. 看能否实现Single-Shot Bidirectional Pyramid Networks for High-Quality Object Detection
-
+7. 使用新的损失函数
