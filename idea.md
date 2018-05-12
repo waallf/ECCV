@@ -9,7 +9,8 @@
 
 ---
 # 未完成  
-6. 看能否实现Single-Shot Bidirectional Pyramid Networks for High-Quality Object Detection  
+6. 看能否实现Single-Shot Bidirectional Pyramid Networks for High-Quality Object Detection  
+（用训练好的SSD来更新anchors,怎么用位置的回归来更新anchors，来使得只改变anchors长宽的情况下，增加iou，而不用改变anchors的中心点坐标）
 1. 改变每个特征图中设定anchors框的大小（一开始的想法是将初始的anchors变小，但是由于bbox较小，这样在计算anchors与bbox时的iou就会变小）  
 *现在并没有使用anchors与bbox iou的阈值（0.5），应该是要加上的，但是由于上述原因iou会很小，所以还是需要测试这个阈值 （代码：ssd_commom/131行）  
 2. 将输入改为1024 
