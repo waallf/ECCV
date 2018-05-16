@@ -6,12 +6,13 @@
 5. 做思维导图  
 6. 统计默认的anchors与bbox的iou大于一个阈值的个数
  
-7. 将输入改为1024 
+7. 将输入改为1024 (无法训练)
 8. 切图  
 
 
 ---
 # 未完成  
+1. 切成512 后需要筛选样本
 6. 看能否实现Single-Shot Bidirectional Pyramid Networks for High-Quality Object Detection  
 （用训练好的SSD来更新anchors,怎么用位置的回归来更新anchors，来使得只改变anchors长宽的情况下，增加iou，而不用改变anchors的中心点坐标）
  怎样用loss来更新anchors，来获得更好的初始框
