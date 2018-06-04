@@ -1,0 +1,38 @@
+#结果记录  
+## anchors 修改：  
+* epoch 1800  threash = 0.1  
+```
+
+```
+
+## anchors 未修改：
+* epoch 20000, threash = 0.1  
+```
+Average Precision  (AP) @[ IoU=0.50:0.95 | maxDets=500 ] = 18.16%.  
+Average Precision  (AP) @[ IoU=0.50      | maxDets=500 ] = 32.96%.  
+Average Precision  (AP) @[ IoU=0.75      | maxDets=500 ] = 17%.  
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets=  1 ] = 0.52%.  
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets= 10 ] = 4.95%.  
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets=100 ] = 25.37%.  
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets=500 ] = 27.69%.  
+```
+* epoch 80000, threash = 0.1  
+```
+Average Precision  (AP) @[ IoU=0.50:0.95 | maxDets=500 ] = 32.4%.
+Average Precision  (AP) @[ IoU=0.50      | maxDets=500 ] = 46.74%.
+Average Precision  (AP) @[ IoU=0.75      | maxDets=500 ] = 35.74%.
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets=  1 ] = 0.5%.
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets= 10 ] = 6.02%.
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets=100 ] = 39.54%.
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets=500 ] = 44.73%.
+```
+* epoch 80000, threash = 0.5  
+```
+Average Precision  (AP) @[ IoU=0.50:0.95 | maxDets=500 ] = 25.16%.
+Average Precision  (AP) @[ IoU=0.50      | maxDets=500 ] = 34.82%.
+Average Precision  (AP) @[ IoU=0.75      | maxDets=500 ] = 28.29%.
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets=  1 ] = 0.5%.
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets= 10 ] = 5.9%.
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets=100 ] = 30.51%.
+Average Recall     (AR) @[ IoU=0.50:0.95 | maxDets=500 ] = 31.18%.
+```
